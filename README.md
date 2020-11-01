@@ -15,6 +15,14 @@ The best approach is to add the module as a submodule into GeoNetwork project ro
 ```
 git submodule add -b 3.4.x https://gitlab.wkt.pt/snig/geonetwork/snig-services.git snig-services
 ```
+Add module to pom.xml
+```
+<modules>
+    ...
+    <module>snig-services</module>
+    ...
+</modules>
+```
 
 Add the dependency in the web module in web/pom.xml:
 
